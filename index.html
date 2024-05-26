@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/btn1_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="checkbox-container">
+            <label><input type="checkbox" id="uppercase" unchecked> Uppercase</label>
+            <label><input type="checkbox" id="lowercase" unchecked> Lowercase</label>
+            <label><input type="checkbox" id="numbers" unchecked> Numbers</label>
+            <label><input type="checkbox" id="specialChars" unchecked> Special Characters</label>
+        </div>
+        <div>
+            <label for="length">Password Length:</label>
+            <input type="range" id="length" min="4" max="20" value="8">
+            <span id="lengthDisplay">8</span>
+        </div>
+        
+        <!-- <button >Generate Password</button> -->
+        <div onclick="generatePassword()" class="btn1-container">
+            <button class="btn-52">
+                <div class="original">Generate</div>
+                <div class="letters">
+                    <span>G</span>
+                    <span>E</span>
+                    <span>N</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>A</span>
+                    <span>T</span>
+                    <span>E</span>
+                </div>
+            </button>
+        </div>
+        <div id="passwordDisplay" class="password-hidden"></div>
+        
+        <!-- <button onclick="copyPassword()">Copy</button> -->
+        <div onclick="copyPassword()" class="btn1-container">
+            <button class="btn-52">
+                <div class="original">Copy</div>
+                <div class="letters">
+                    <span>c</span>
+                    <span>o</span>
+                    <span>p</span>
+                    <span>y</span>
+                </div>
+            </button>
+        </div>
+        
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
